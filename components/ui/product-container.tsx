@@ -3,7 +3,7 @@
 import { Product } from "@/types";
 import Image from "next/image";
 import IconButton from "./icon-button";
-import { Expand, ShoppingCart } from "lucide-react";
+import { Expand } from "lucide-react";
 import Currency from "./currency";
 import { useRouter } from "next/navigation";
 import { MouseEventHandler } from "react";
@@ -45,7 +45,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4 shadow-md hover:border-transparent "
+      className="bg-white group h-[500px] md:h-[550px] cursor-pointer rounded-xl border p-3 space-y-4 shadow-md hover:border-transparent "
     >
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image
@@ -77,7 +77,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ data }) => {
         <div className="flex flex-col items-center justify-center gap-3">
           <Currency value={data.price} />
           <ButtonAddToCart
-            className="text-sm p-0.5 px-1.5   max-h-8 space-y-2 mt-5"
+            className="text-xs sm:text-sm p-2 max-h-8 space-y-2 mt-5"
             data={data}
           />
         </div>

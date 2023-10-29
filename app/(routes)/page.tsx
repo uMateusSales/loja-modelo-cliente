@@ -5,14 +5,13 @@ import Billboard from "@/components/billboard";
 import getBillboard from "@/actions/get-billboards";
 import ProductList from "@/components/product-list";
 import getProducts from "@/actions/get-products";
-import LoadingSkeleton from "@/components/ui/loading-skeleton";
 import ContactUs from "@/components/ContactUs";
 import { Separator } from "@/components/ui/separator";
 
 export const revalidate = 9000;
 
 const HomePage = async () => {
-  const billboard = await getBillboard("d98d2f9c-c3ad-49a8-b3a9-78cfd3d7d1a8");
+  const billboard = await getBillboard("f81a927b-84af-4dc0-b084-5ec234b97542");
   const produtos = await getProducts({
     storeId: "57c9eca8-2afa-495d-8a84-a3b0a6dc6e78",
   });

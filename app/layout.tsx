@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
 import Footer from "@/components/footer";
@@ -10,12 +10,12 @@ import ToastProvider from "@/providers/toast-provider";
 import { Suspense } from "react";
 import LoadingSkeleton from "@/components/ui/loading-skeleton";
 
-const fonte = Roboto({ subsets: ["latin"], weight: ["300"] });
+const fonte = Rajdhani({ subsets: ["latin"], weight: ["500"] });
 
 export const metadata: Metadata = {
-  title: "Roltec rolamentos, correias e rodizios",
-  description:
-    "Sua loja fornecedora de rolamentos de todos os tipos, correias transportadoras e rodizios industriais. Os melhores preços do mercado você encontra aqui!",
+  authors: [{ name: "Josh", url: "" }],
+  title: "Seu site perfeito para loja e atendimento virtual!",
+  description: "Loja teste feita para modelo de apresentação",
 };
 
 export default function RootLayout({

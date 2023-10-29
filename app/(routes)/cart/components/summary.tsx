@@ -27,7 +27,7 @@ const Summary = () => {
       document.documentElement.clientWidth ||
       document.body.clientWidth;
 
-    const phoneWhats = "5581986379255";
+    const phoneWhats = "";
 
     const textWhats = `########  PEDIDO REALIZADO NO SITE  ######## 
     

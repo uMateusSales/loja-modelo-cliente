@@ -11,7 +11,6 @@ import {
 } from "./ui/card";
 import Link from "next/link";
 import Button from "./ui/button";
-import { Separator } from "./ui/separator";
 
 const ContactUs = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -29,7 +28,7 @@ const ContactUs = () => {
       document.documentElement.clientWidth ||
       document.body.clientWidth;
 
-    const phoneWhats = "5581986379255";
+    const phoneWhats = "";
 
     const textWhats = ` 
         *Oi tudo bem? estava dando uma olhada no seu catálogo e gostaria gostaria de fazer uma cotação de um produto!*
@@ -67,7 +66,7 @@ const ContactUs = () => {
 
           <Link
             target="_blank"
-            href="mailto:roltec.pe@hotmail.com?subject=Produto não encontrado no site&body=Estou em busca comprar de alguma correia, rodizio ou rolamento. Poderia me ajudar?"
+            href="mailto:email.com?subject=Produto não encontrado no site&body=Estou em busca comprar de alguma correia, rodizio ou rolamento. Poderia me ajudar?"
           >
             <Button className="mt-6">Enviar um email para a empresa</Button>
           </Link>
