@@ -22,7 +22,10 @@ const HomePage = async () => {
         <Billboard data={billboard} />
 
         <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
-          <ProductList title="Produtos disponiveis" items={produtos} />
+          <ProductList
+            title="Produtos mais recentes de nosso catálogo!"
+            items={produtos}
+          />
         </div>
         <Separator className="h-0.5 rounded mx-1" orientation="horizontal" />
         <ContactUs />

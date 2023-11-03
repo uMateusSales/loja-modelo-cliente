@@ -9,13 +9,21 @@ import ModalProvider from "@/providers/modal-provider";
 import ToastProvider from "@/providers/toast-provider";
 import { Suspense } from "react";
 import LoadingSkeleton from "@/components/ui/loading-skeleton";
+import { NextUIProvider } from "@nextui-org/react";
 
 const fonte = Rajdhani({ subsets: ["latin"], weight: ["500"] });
 
 export const metadata: Metadata = {
-  authors: [{ name: "Josh", url: "" }],
-  title: "Seu site perfeito para loja e atendimento virtual!",
-  description: "Loja teste feita para modelo de apresentação",
+  authors: [
+    {
+      name: "Mateus",
+      url: "https://www.linkedin.com/in/mateus-lins-061a5424a/",
+    },
+  ],
+
+  title: "Loja fashion teste ",
+  description:
+    "Sua propia virutal totalmente personalizavel! Pronta para modernizar sua marca e realizar vendas diretamente pelo seu whatsapp!",
 };
 
 export default function RootLayout({
@@ -30,7 +38,7 @@ export default function RootLayout({
         <link rel="icon" href="images/icon.ico" sizes="any" />
       </head>
 
-      <body className={fonte.className}>
+      <body className={`${fonte.className} bg-rose-50`}>
         <ModalProvider />
         <ToastProvider />
 
