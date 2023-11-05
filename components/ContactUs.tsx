@@ -49,13 +49,13 @@ const ContactUs = () => {
 
   return (
     <>
-      <Card>
+      <Card className="mx-4 shadow">
         <CardHeader>
           <CardTitle className="text-2xl">
             Procurando algo que não encontrou ?
           </CardTitle>
           <CardDescription className="text-lg font-semibold">
-            Entre em contato em nosso whatsapp ou email!
+            Entre em contato conosco que podemos te ajudar a encontrar!
           </CardDescription>
         </CardHeader>
 
