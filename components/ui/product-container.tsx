@@ -45,7 +45,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className="group h-[500px] md:h-[550px] cursor-pointer rounded-xl border p-3 space-y-4 bg-rose-50 shadow-md hover:border-transparent hover:bg-neutral-200 "
+      className="group h-[500px] md:h-[600px] cursor-pointer rounded-xl border p-3 space-y-4  bg-rose-50 shadow-md hover:border-transparent hover:bg-neutral-200 "
     >
       <div className="aspect-square rounded-xl bg-gray-100 relative">
         <Image
@@ -69,7 +69,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ data }) => {
           </div>
         )}
       </div>
-      <div className="flex flex-col mb-0 gap-0">
+      <div className="flex flex-col mb-0 gap-2 md:gap-4">
         <div className="flex flex-col font-semibold  gap-1 mb-2">
           <p className=" text-zinc-900 sm:text-base md:text-lg">{data.name}</p>
           <p className="text-sm text-zinc-600 mt-2">{data.category.name}</p>
